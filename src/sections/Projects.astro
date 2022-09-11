@@ -1,0 +1,19 @@
+---
+import Project from "../components/Project.astro";
+import TechBadge from "../components/TechBadge.astro";
+---
+
+<h1 class="text-xl mt-8 font-bold text-orange-400">My Recent Projects</h1>
+<div>
+  <Project
+    title="Robolist"
+    ghLink="https://github.com/drew-harris/robolist"
+    visitLink="http://www.robolist.net"
+    description="A customizable school planner that schedules assignments for you and syncs with your college's canvas portal."
+    image="./Robolist-screen-shot.png"
+  >
+    <TechBadge name="React" color="#2563eb" />
+    <TechBadge name="TRPC" color="#52525b" />
+    <TechBadge name="NextJS" color="orange" />
+  </Project>
+</div>

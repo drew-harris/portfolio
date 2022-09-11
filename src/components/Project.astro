@@ -1,0 +1,25 @@
+---
+const { title, ghLink, visitLink, description, image } = Astro.props;
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons";
+---
+
+<div
+  class="flex flex-col gap-7 sm:grid grid-cols-2 bg-slate-900 p-4 rounded-xl my-2"
+>
+  <div class="max-w-md">
+    <h2 class="text-xl text-orange-200 font-semibold">{title}</h2>
+    <div>{description}</div>
+    <div class="flex gap-2 my-1 align-center">
+      <slot />
+    </div>
+    <div class="flex mt-4 gap-9">
+      <a target="_blank" href={ghLink}>
+        <IconBrandGithub />
+      </a>
+      <a target="_blank" href={visitLink}>
+        <IconExternalLink />
+      </a>
+    </div>
+  </div>
+  <img class="border border-white rounded-md shadow-sm" src={image} />
+</div>

@@ -1,12 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import HeaderBar from '../components/HeaderBar.astro';
+import Layout from "../layouts/Layout.astro";
+import HeaderBar from "../sections/HeaderBar.astro";
+import HiThere from "../sections/HiThere.astro";
+import Projects from "../sections/Projects.astro";
 ---
 
-<Layout title="Drews Portfolio">
-	<HeaderBar />
-	<main >
-		
-
-	</main>
+<Layout>
+  <HeaderBar />
+  <main>
+    <HiThere />
+    <Projects />
+  </main>
 </Layout>

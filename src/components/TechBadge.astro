@@ -1,0 +1,10 @@
+---
+const { name, color } = Astro.props;
+const style = {
+  backgroundColor: color,
+};
+---
+
+<div style={style} class="p-2 w-fit rounded-2xl text-sm">
+  {name}
+</div>
