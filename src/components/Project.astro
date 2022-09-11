@@ -1,7 +1,6 @@
 ---
 const { title, ghLink, visitLink, description, image } = Astro.props;
-import pkg from "@tabler/icons";
-const { IconBrandGithub, IconExternalLink } = pkg;
+import { BrandGithub, ExternalLink } from "tabler-icons-react";
 ---
 
 <div
@@ -15,10 +14,10 @@ const { IconBrandGithub, IconExternalLink } = pkg;
     </div>
     <div class="flex mt-4 gap-9">
       <a target="_blank" href={ghLink}>
-        <IconBrandGithub />
+        <BrandGithub />
       </a>
       <a target="_blank" href={visitLink}>
-        <IconExternalLink />
+        <ExternalLink />
       </a>
     </div>
   </div>
