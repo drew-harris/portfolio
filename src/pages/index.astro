@@ -1,9 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderBar from "../sections/HeaderBar.astro";
+import HiThere from "../sections/HiThere.astro";
+import Projects from "../sections/Projects.astro";
+---
 
-<head>
-  <meta property="og:title" content="Pee Pee" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://drewh.net" />
-  <meta property="og:description" content="Pee Pee lol" />
-  <meta name="theme-color" content="#FF0000">
-</head>
-<div>Peepee</div>
+<Layout>
+  <HeaderBar />
+  <main>
+    <HiThere />
+    <Projects />
+    <div class="text-center my-8">
+      More projects can be found on
+      <a
+        class="text-orange-500 underline"
+        href="https://www.github.com/drew-harris">My Github</a
+      >
+    </div>
+  </main>
+</Layout>
