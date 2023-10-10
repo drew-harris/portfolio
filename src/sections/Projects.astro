@@ -1,23 +1,11 @@
 ---
 import Project from "../components/Project.astro";
 import TechBadge from "../components/TechBadge.astro";
+import SmallProject from "../components/SmallProject.astro";
 ---
 
-<h1 class="text-xl mt-8 font-bold text-orange-400">My Recent Projects</h1>
+<h1 class="text-xl mt-8 font-bold text-orange-400">My Projects</h1>
 <div>
-  <Project
-    title="Stemify Battles (WIP)"
-    ghLink="https://github.com/drew-harris/hit-battle"
-    visitLink="http://battle.stemify2.net"
-    description="Stemify community event to vote on superior songs. Daily song matchups with point system and predictions."
-    image="./battlevideo.mov"
-    flipped
-  >
-    <TechBadge name="React" color="#2563eb" />
-    <TechBadge name="Tailwind" color="#035c8c" />
-    <TechBadge name="TRPC" color="#52525b" />
-    <TechBadge name="NextJS" color="#b91c1c" />
-  </Project>
   <Project
     title="Robolist"
     ghLink="https://github.com/drew-harris/robolist"
@@ -31,10 +19,10 @@ import TechBadge from "../components/TechBadge.astro";
     <TechBadge name="NextJS" color="#b91c1c" />
   </Project>
   <Project
-    title="Stemify"
+    title="Stemify 2"
     ghLink="https://github.com/drew-harris/stemify2"
     visitLink="http://www.stemify2.net"
-    description="Music platform that allows users to split songs into drums, vocals, and bass to create live remixes in the browser."
+    description="Music platform that allows users to split songs into drums, vocals, and bass to create live remixes in the browser. Used by over 20k Stem Player owners!"
     image="./stemifyvideo.mov"
     flipped
   >
@@ -46,4 +34,48 @@ import TechBadge from "../components/TechBadge.astro";
     <TechBadge name="Go" color="#4cb9db" />
     <TechBadge name="Python" color="#646464" />
   </Project>
+
+  <SmallProject
+    title="Spotify Sessions"
+    description="Mobile app that tracks your Spotify listening sessions so you can jump right back to where you left off in an album."
+    ghLink="https://github.com/drew-harris/spotify-sessions"
+  />
+
+  <SmallProject
+    title="Shulker"
+    description="A TUI (terminal user interface) for efficient plugin development at the HuMIn Game Labs."
+    ghLink="https://github.com/drew-harris/shulker"
+  />
+
+  <SmallProject
+    title="Election Tracker"
+    description="Scraping Fizz, the annoymous college social media, with sentiment analysis to predict the outcomes of SMU student body elections."
+    ghLink="https://github.com/drew-harris/election-tracker"
+  />
+
+  <SmallProject
+    title="Lights"
+    description="Rust program that hijacks the Govee Smart Light bluetooth connection to sync the room's color with a television for an immersive viewing experience."
+    ghLink="https://github.com/drew-harris/lights"
+  />
+
+  <SmallProject
+    title="Flickaid"
+    description="Database/GUI Class Project that allowers to rate and organize their favorite films."
+    ghLink="https://github.com/drew-harris/db-gui-team-1"
+    visitLink="https://flickaid.com"
+  />
+
+  <SmallProject
+    title="Stemify (Original)"
+    description="The original platform for high quality music stems. Peaked at 80k daily users and was replaced by Stemify 2. Written with Svelte and MongoDB."
+    ghLink="https://github.com/drew-harris/stemify-website"
+    visitLink="https://stemify-website.vercel.app/"
+  />
+
+  <SmallProject
+    title="ASL Pro"
+    description="Automatically generates flashcards from aslpro.com"
+    ghLink="https://github.com/drew-harris/stemify-website"
+  />
 </div>
